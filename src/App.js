@@ -1,16 +1,39 @@
-import { Sidebar, Header, TaskCard } from './components';
+import {
+  Sidebar, Header, TaskBoard, AddTask,
+} from './components';
 
 const App = () => {
   return (
-    <div className="flex flex-row">
-      <Sidebar />
-      <main className="bg-dark-bullace w-screen">
-        <Header />
-        <div className="p-xl">
-          <TaskCard />
+    <>
+      <AddTask />
+      <div className="grid grid-cols-12">
+        <div className="col-span-1">
+          <Sidebar />
         </div>
-      </main>
-    </div>
+        <main className="col-span-11 bg-dark-bullace w-full">
+          <Header />
+          <div className="min-w-full overflow-x-auto" style={{ minHeight: 'calc(100% - 95px)' }}>
+            <ul className="p flex gap-4 mr-8">
+              <li>
+                <TaskBoard />
+              </li>
+              <li>
+                <TaskBoard />
+              </li>
+              <li>
+                <TaskBoard />
+              </li>
+              <li>
+                <TaskBoard />
+              </li>
+              <li>
+                <TaskBoard />
+              </li>
+            </ul>
+          </div>
+        </main>
+      </div>
+    </>
   );
 };
 
