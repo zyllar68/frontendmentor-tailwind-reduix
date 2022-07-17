@@ -1,11 +1,11 @@
 import {
-  Sidebar, Header, TaskBoard, AddTask,
+  Sidebar, Header, TaskBoard, ViewTask,
 } from './components';
 
 const App = () => {
   return (
     <>
-      <AddTask />
+      <ViewTask />
       <div className="grid grid-cols-12">
         <div className="col-span-1">
           <Sidebar />

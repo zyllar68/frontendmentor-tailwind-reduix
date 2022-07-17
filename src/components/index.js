@@ -4,3 +4,4 @@ export { default as TaskBoard } from './TaskBoard';
 export { default as AddTask } from './AddTask';
 export { default as Input } from './Input';
 export { default as Button } from './Button';
+export { default as ViewTask } from './ViewTask';
