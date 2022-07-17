@@ -6,9 +6,15 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "eslint:recommended"
     ],
+    "parser": "@babel/eslint-parser",
     "parserOptions": {
+        "requireConfigFile": false,
+        "babelOptions": {
+            "presets": ["@babel/preset-react"]
+          },
         "ecmaFeatures": {
             "jsx": true
         },
@@ -21,6 +27,7 @@
         "linebreak-style":0,
         "react/jsx-uses-vars": "error",
         "react/jsx-uses-react": "off",
+        "react/prop-types": "off",
         "react/react-in-jsx-scope": "off",
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "arrow-body-style": ["error", "always"],
