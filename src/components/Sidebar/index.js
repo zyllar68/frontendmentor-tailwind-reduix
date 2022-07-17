@@ -3,7 +3,7 @@ import BoardList from './BoardList';
 
 const Sidebar = () => {
   return (
-    <div className=" w-[300px] h-screen bg-semi-dark-bullace border-r border-[#6e6e6e]">
+    <div className="flex flex-col bg-semi-dark-bullace min-h-screen border-r-2 border-[#7e7f80]">
       <div className="mt-6 flex justify-center">
         <img className="h-32 rounded-full" src={logo} alt="company logo" />
       </div>
